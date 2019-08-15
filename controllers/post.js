@@ -27,7 +27,7 @@ exports.getPosts = (req, res) => {
   .populate("postedBy", "_id name")
   .select("_id title body") //to get only selected field and avoid others live _v
   .then(posts => {
-    res.json({posts})  //or posts:
+    res.json({posts})  //its going to backed under posts object:
   })
   .catch(err => console.log(err))
 }

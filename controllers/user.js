@@ -29,7 +29,7 @@ exports.allUsers = (req,res) => {
         error: err
       })
     }
-    res.json ({users})
+    res.json(users)  //({users}) is known as users:users thus creates users tables in database
   }).select("name email created updated")
 }
 
