@@ -18,10 +18,10 @@ const cors = require('cors')
 //reading .env file
 dotenv.config()
 
-
 //db
-mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
-.then(() => console.log("DB connected"))
+mongoose
+    .connect(process.env.MONGO_URI, { useNewUrlParser: true })
+    .then(() => console.log("DB Connected"));
 
 mongoose.connection.on("error", err => {
   console.log(`DB conenction error: ${err.message}`)
