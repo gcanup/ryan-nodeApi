@@ -22,7 +22,11 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now //usuallu Date.now() but with mongoose no brackets
   },
-  updated: Date
+  updated: Date,
+  photo: {
+    data: Buffer,
+    contentType: String
+  }
 });
 
 //to exist logically but not written to the document, specially for passwords

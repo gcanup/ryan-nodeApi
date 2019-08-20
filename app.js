@@ -13,8 +13,12 @@ const bodyParser = require("body-parser")
 var cookieParser = require('cookie-parser')
 //to validate json data like min width, maxwidth, type: string or num and so on
 const expressValidator = require("express-validator")
+//for file systems access, images, pdf
 const fs = require('fs')
+//A web application executes a cross-origin HTTP request for safety when it requests a resource that has a different origin (domain, protocol, or port) than its own origin.
 const cors = require('cors')
+
+
 //reading .env file
 dotenv.config()
 
