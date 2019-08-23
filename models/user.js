@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
 //to exist logically but not written to the document, specially for passwords
 // to hash the password and save in the database
 userSchema
-  .virtual("password")
+  .virtual("password") //information coming password named field
   .set(function(password) {
     // create temporary variable called _password
     this._password = password;
