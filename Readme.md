@@ -25,3 +25,9 @@ Api urls:
 /api/posts/by/:userId: "get posts by user",
 /api/post/:postId: "update/delete post"
 }
+
+
+MONGO_URI = mongodb+srv://nodeDB:nodeDB@node-api-prszj.mongodb.net/test?retryWrites=true&w=majority
+
+PORT = 8080
+JWT_SECRET=ASDFASDFASDFASD1234ASDFEDFXFDFCF
